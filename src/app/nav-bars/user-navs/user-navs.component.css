@@ -1,0 +1,62 @@
+.sidenav-container {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.nav-button{
+position: absolute;
+margin-left: 82%;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+}
+
+.nav-button{
+  background: #ff0083;
+}
+
+.my-name{
+  position: absolute;
+  margin-left: 5%;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.my-workout{
+  position: absolute;
+  margin-left: 40%;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width:950px) {
+  .nav-button { display:none; }
+}
+
+
+.app-header{
+  border-bottom:1px  #dbdbdb;
+  background: white;
+  /* position: fixed;
+  top: 0%;  */
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+  /* background:#313131; */
+  background:#313131;
+}
+
+mat-nav-list>a{
+  color: white;
+}
+
+.sidenav-title{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background: #313131;
+}

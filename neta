@@ -1,0 +1,102 @@
+<!-- <div class="main-container">
+  <img src="../../assets/wp.png" width="600" height="600">
+</div> -->
+
+
+<mat-grid-list cols="12" rowHeight="80px">
+  <!--  -->
+  <mat-grid-tile class="first" rowspan="2.5" colspan="6">
+    <mat-grid-tile-header>Header 1</mat-grid-tile-header>
+    1
+    <mat-grid-tile-footer>Footer 1</mat-grid-tile-footer>
+  </mat-grid-tile>
+  <mat-grid-tile class="second" rowspan="2.5" colspan="6">
+    <mat-grid-tile-header>Header 2</mat-grid-tile-header>
+    2
+    <mat-grid-tile-footer>Footer 2</mat-grid-tile-footer>
+  </mat-grid-tile>
+  <!--  -->
+  <mat-grid-tile class="thirs" rowspan="7" colspan="12">
+    <!-- <mat-grid-tile-header>Header 3</mat-grid-tile-header> -->
+    <img src="../../assets/wp.png" width="600" height="500">
+    <!-- <mat-grid-tile-footer>Footer 3</mat-grid-tile-footer> -->
+  </mat-grid-tile>
+  <!--  -->
+  <mat-grid-tile class="fourth" rowspan="2.5" colspan="12">
+    <mat-grid-tile-header>My progress</mat-grid-tile-header>
+    <!-- <mat-toolbar>
+      <span>My Application</span>
+    </mat-toolbar> -->
+
+    <!-- <mat-progress-bar mode="determinate" value="70">70%</mat-progress-bar> -->
+    <div class="w3-light-grey">
+      <div class="w3-container" style="width:75%">
+        <p>75%</p>
+      </div>
+    </div>
+    <br>
+
+    <!-- <mat-grid-tile-footer class="my-program">
+      <mat-chip>My Program</mat-chip>
+    </mat-grid-tile-footer> -->
+
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+
+///css 
+/* .main-container{ */
+    /* background:#f2f2f2; */
+    /* background:#e6e6e6;
+    height: 100vw;
+} */
+
+mat-grid-tile {
+    background: #e6e6e6;
+    font-family: 'Lato', sans-serif;
+  }
+
+  mat-grid-tile-header{
+      font-size: 22px;
+      font-weight: 400;
+      color: #4a4a4a;
+      background:greenyellow;
+  }
+
+  mat-toolbar{
+      
+  }
+
+
+  .w3-light-grey{
+      height: 25%;
+      width: 85%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 2%;
+      border-radius: 5px 25px 25px 5px;
+  }
+
+  .w3-container{
+    height: 100%;
+    border-radius: 5px 15px 15px 5px;
+    background: #7cd3ff;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 300;
+    text-align:center;
+    vertical-align:middle;
+  }
+
+  .w3-container>p{
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+
+  }
+
+
+
+  my-program{
+
+  }

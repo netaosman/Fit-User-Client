@@ -1,0 +1,132 @@
+<div class="grid-container">
+  <h1 class="mat-h1">My Workout</h1>
+  <mat-grid-list cols="6" rowHeight="100px">
+
+    <!-- Header -->
+
+    <!-- One -->
+    <mat-grid-tile class="one" rowspan="2" colspan="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Calories</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">645</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <!-- Two -->
+    <mat-grid-tile class="two" rowspan="2" colspan="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Heart Rate</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <mat-list>
+            <mat-list-item> Ava.
+              143
+            </mat-list-item>
+            <mat-list-item> Peak.
+              188
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <!-- Three -->
+    <mat-grid-tile class="three" rowspan="2" colspan="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Technique</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">7.8</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <!-- =========== -->
+
+    <!-- Under Header -->
+
+    <!-- Details -->
+    <mat-grid-tile class="details" rowspan="3.5" colspan="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Details</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <mat-list>
+            <!-- <mat-list-item> Date 08/09/2019 </mat-list-item> -->
+            <mat-list-item> Total-time  00:47:32 </mat-list-item>
+            <mat-list-item> Min recovery  time 24HR </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <!-- Time analysis -->
+    <mat-grid-tile class="time" rowspan="3.5" colspan="4">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>Time analysis</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <canvas id="doughnut" width="100" height="25"></canvas>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <!-- ========== -->
+    <!-- Main Body -->
+
+    <!-- Left body -->
+    <mat-grid-tile class="left" rowspan="6" colspan="3">
+      <mat-card class="body-card">
+        <mat-card-content class="dashboard-card-content">
+          <!-- <img src="../../assets/front.png" width="380" height="525" hspace="0"> -->
+          <img src="https://s3-eu-west-1.amazonaws.com/fitvision-photos/front.png" width="380" height="525" hspace="0">
+        </mat-card-content>
+        <button class="sh" routerLink="/userMain/shouldert">Deltoid</button>
+        <button class="chest" routerLink="/userMain/chestt">Pactoralis</button>
+        <button class="front_leg" routerLink="/userMain/lunget">Rectus femoris</button>
+      </mat-card>
+
+    </mat-grid-tile>
+    <!-- Right body -->
+    <mat-grid-tile class="right" rowspan="6" colspan="3">
+      <mat-card class="body-card">
+        <mat-card-content class="dashboard-card-content">
+          <!-- <img src="../../assets/back.png" width="380" height="525" hspace="0"> -->
+          <img src="https://s3-eu-west-1.amazonaws.com/fitvision-photos/back.png" width="380" height="525" hspace="0">
+        </mat-card-content>
+        <button class="shoulders-back" routerLink="/userMain/shouldert">Deltoid </button>
+        <button class="legs" routerLink="/userMain/lunget">Hamstrings </button>
+      </mat-card>
+    </mat-grid-tile>
+
+    <!-- Progress bars -->
+    <mat-grid-tile class="progress" rowspan="3.5" colspan="6">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>My Progress</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item>
+              Trget A
+              <div class="w3-light-grey">
+                <div class="w3-container" style="width:85%">
+                  <p>85%</p>
+                </div>
+              </div>
+            </mat-list-item>
+            <br>
+            <mat-list-item>
+              Trget B
+              <div class="w3-light-grey">
+                <div class="w3-container-second" style="width:59%">
+                  <p>59%</p>
+                </div>
+              </div>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>
