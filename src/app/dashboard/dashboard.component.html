@@ -1,47 +1,95 @@
-<!-- <div class="main-container">
-  <img src="../../assets/wp.png" width="600" height="600">
-</div> -->
+<mat-toolbar class="header-bar" color="primary">
+    <mat-toolbar-row>
+        <h1>Workout summary</h1>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-grid-list cols="6" rowHeight="100px">
+
+    <!-- One -->
+    <mat-grid-tile class="one" rowspan="2" colspan="2">
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Calories</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">645</mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <!-- Two -->
+    <mat-grid-tile class="two" rowspan="2" colspan="2">
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Heart Rate</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+                <mat-list>
+                    <mat-list-item> Ava. 143
+                    </mat-list-item>
+                    <mat-list-item> Peak. 188
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <!-- Three -->
+    <mat-grid-tile class="three" rowspan="2" colspan="2">
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Technique</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">7.8</mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <!-- Fourth - Details -->
+    <mat-grid-tile class="fourth" rowspan="3.5" colspan="2">
+        <mat-accordion>
+            <!-- first panel -->
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+            <!-- second panel -->
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+            <!-- third panel -->
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-grid-tile>
+    <!-- Pie-Chart -->
+    <mat-grid-tile class="pie-chart" rowspan="3.5" colspan="4">
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Details</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">7.8</mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
 
 
-<mat-grid-list cols="12" rowHeight="80px">
-  <!--  -->
-  <mat-grid-tile class="first" rowspan="2.5" colspan="6">
-
-    <mat-grid-tile-header>Calories</mat-grid-tile-header>
-    263
-    <!-- <mat-grid-tile-footer>Footer 1</mat-grid-tile-footer> -->
-  </mat-grid-tile>
-  <mat-grid-tile class="second" rowspan="2.5" colspan="6">
-    <mat-grid-tile-header>Work vs Rest
-      <p> (sec)</p>
-    </mat-grid-tile-header>
-    14/36
-    <!-- <mat-grid-tile-footer>Footer 2</mat-grid-tile-footer> -->
-  </mat-grid-tile>
-  <!--  -->
-  <mat-grid-tile class="third" rowspan="7" colspan="12">
-    <!-- <img src="../../assets/wp.png" width="600" height="500" hspace="0"> -->
-    <!-- <img src="https://s3-eu-west-1.amazonaws.com/fitvision-photos/wp.png" width="600" height="500" hspace="0"> -->
-    <img src="../../assets/frontWithPink.png" width="400" height="500" hspace="0">
-    <img src="../../assets/backWithPink.png" width="400" height="520" hspace="0">
-    <button class="sh" routerLink="/userMain/shouldert">Shoulders</button>
-    <button class="chest" routerLink="/userMain/chestt">Chest</button>
-    <button class="legs" routerLink="/userMain/lunget">Legs </button>
-  </mat-grid-tile>
-
-  <mat-grid-tile class="fourth" rowspan="1" colspan="12">
-    <mat-toolbar>
-      <span>My Progress</span>
-    </mat-toolbar>
-  </mat-grid-tile>
-
-  <mat-grid-tile class="fifth" rowspan="1" colspan="12">
-    <div class="w3-light-grey">
-      <div class="w3-container" style="width:75%">
-        <p>75%</p>
-      </div>
-    </div>
-  </mat-grid-tile>
-
-  <mat-grid-tile class="sixth" rowspan="1" colspan="12"></mat-grid-tile>
 </mat-grid-list>

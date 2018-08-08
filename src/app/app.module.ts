@@ -11,6 +11,7 @@ import { MyNavComponent } from './tests/my-nav/my-nav.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import {
   MatGridListModule,
@@ -35,8 +36,8 @@ import { LungeTableComponent } from './tables/lunge-table/lunge-table.component'
 import { ToolbarHeaderComponent } from './toolbar-header/toolbar-header.component';
 import { UserNavsComponent } from './nav-bars/user-navs/user-navs.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MatDashComponent } from './mat-dash/mat-dash.component';
 import { MainDashComponent } from './main-dash/main-dash.component';
+import { HeaderComponent } from './nav-bars/header/header.component';
 
 //App router
 const appRoutes: Routes = [
@@ -45,8 +46,8 @@ const appRoutes: Routes = [
     path: 'userMain',
     component: UserMainComponent,
     children: [
-      { path: '', component: MainDashComponent },
-      { path: 'mat-dash', component: MatDashComponent },
+      { path: '', component: DashboardComponent },
+      { path: 'old-dash', component: MainDashComponent },
       { path: 'main-dash', component: MainDashComponent },
       { path: 'chestt', component: ChestTableComponent },
       { path: 'lunget', component: LungeTableComponent },
@@ -69,8 +70,8 @@ const appRoutes: Routes = [
     ToolbarHeaderComponent,
     UserNavsComponent,
     DashboardComponent,
-    MatDashComponent,
     MainDashComponent,
+    HeaderComponent
     
   ],
   imports: [
@@ -92,7 +93,8 @@ const appRoutes: Routes = [
     MatSortModule,
     MatProgressBarModule,
     MatChipsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
